@@ -53,7 +53,7 @@ public class OtpVerificationActivity extends AppCompatActivity {
     private void verifyOtp(String userOtp) {
         if (userOtp.equals(correctOtp)) {
             // Successful verification - proceed to next screen
-            Intent intent = new Intent(this, RegisterActivity.class);
+            Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
             finish();
         } else {
